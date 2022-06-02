@@ -29,7 +29,7 @@ If you want to test your project locally, you can use the following commands:
 dfx start --background
 
 # Deploys your canisters to the replica and generates your candid interface
-dfx deploy
+dfx deploy --network=ic --argument '(2, vec {principal "input your principal"; principal "input your principal"; principal "input your principal"})'
 ```
 
 Once the job completes, your application will be available at `http://localhost:8000?canisterId={asset_canister_id}`.
